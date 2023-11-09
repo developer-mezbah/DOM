@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+
+    <h1>some text</h1>
+    <ul id="item">
+
+
+    </ul>
+    <div class="container" id="container">
+
+    <article class="blog">
+        <h3>My new Blog-1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur amet nulla a reiciendis eveniet ipsam quasi temporibus obcaecati enim blanditiis.</p>
+    </article>
+    <article class="blog">
+        <h3 id="two">My new Blog-2</h3>
+        <p>Voluptatum veniam laborum repellat natus maxime laboriosam exercitationem assumenda. Tempore esse necessitatibus quidem minus molestias repellendus possimus! Facere, vitae debitis!</p>
+    </article>
+    <article class="blog">
+        <h3 id="second">My new Blog-3</h3>
+        <p>Non repellat qui reprehenderit, corrupti, accusantium debitis voluptatibus, placeat libero iusto laudantium dolorum ipsam in. Accusantium, dolorum libero. Aliquid, amet.</p>
+    </article>
+    <article class="blog">
+        <h3 id="second">My new Blog-4</h3>
+        <p>Non repellat qui reprehenderit, corrupti, accusantium debitis voluptatibus, placeat libero iusto laudantium dolorum ipsam in. Accusantium, dolorum libero. Aliquid, amet.</p>
+    </article>
+    </div>
+
+
+
+    <script>
+
+
+
+const vlogs = document.getElementsByClassName('blog');
+
+       
+
+        const article = document.createElement('article');
+        article.classList.add('blog')
+        const h3 = document.createElement('h3');
+        h3.innerText = 'first child is Blog-5 ';
+        const p = document.createElement('p');
+        p.innerText ='$ Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur amet nulla a reiciendis eveniet ipsam quasi temporibus obcaecati enim blanditiis.'
+        article.appendChild(h3)
+        article.appendChild(p)
+        console.log(article);
+
+        const container = document.getElementById('container');
+        // console.log(div);
+
+
+
+
+        // div.appendChild(article)
+        div.insertBefore(article, container.firstChild)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const li = document.createElement('li');
+        li.innerText = 'this element is created by us'
+        const ul = document.getElementById('item');
+        ul.appendChild(li);
+
+
+        // style
+        for (const vlog of vlogs) {
+         vlog.style.border = '4px solid gray'
+         vlog.style.margin = '20px'
+         vlog.style.padding = '20px'
+        }
+        /* // const student ={name: 'bappy',age:33,weight:43}
+        // console.log(student.name);
+        // console.log(document.body);
+
+        const sceondTaitle = document.getElementById('two');
+        console.log(sceondTaitle.getAttribute('id'));
+        sceondTaitle.innerText = " our new text" ;
+
+        sceondTaitle.style.backgroundColor ='green';
+        sceondTaitle.style.padding = '20px'
+        console.log(sceondTaitle); 
+        console.log(sceondTaitle.getAttribute('style'));
+        
+
+        // console.log(sceondTaitle.innerText);
+
+        // const thirdTaitle = document.getElementById('three');
+        // console.log(thirdTaitle);
+
+
+//tag select kota 
+
+           let tags =document.getElementsByTagName('h3');
+        // //    console.log(tags);
+        //     for(const tag of tags){
+        //         console.log(tag);
+        //     }
+//elements h3 select kora
+
+        // const tags =document.getElementsByTagName('h3');
+        // for(const tag of tags){
+        //     // console.log(tag.innerText);
+        // }
+
+//p tag or element select kora
+
+        const paras =document.getElementsByTagName('p');
+        for(const para of paras){
+            // console.log(para.innerText);
+        }
+
+//class dore style kora
+
+    // const articles = document.getElementsByClassName('blog');
+    // for(const articl of articles) {
+    //     articl.style.border = '4px solid gray'
+    //     articl.style.margin = '30px'
+    //     articl.style.padding = '10px'
+    // }
+
+//query selector
+
+    // const selector = document.querySelector('.blog p ');
+    // console.log(selector);
+
+//query selector all
+
+     const selector = document.querySelectorAll('.blog p');
+     console.log(selector); 
+         */
+
+       
+    </script>
+</body>
+</html>
